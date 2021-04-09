@@ -1,0 +1,9 @@
+     [
+      {"EntrepriseId": "1at","Nome":"Antonio","Cognome":"Pisano","Qualifica":"Business Manager Lead","Telefono":"+39 335 8525","Stato":"Online"},
+      {"EntrepriseId": "2ay","Nome":"Andrea","Cognome":"Cogoni","Qualifica":"Businiess Assoc","Telefono":"+39 369 8974","Stato":"Non al pc"},
+      {"EntrepriseId": "3mu","Nome":"Alessandro","Cognome":"Massone","Qualifica":"DropShipper Manager","Telefono":"+39 398 0474","Stato":"Online"},
+      {"EntrepriseId": "4ki","Nome":"Massimiliano Andrea","Cognome":"Destro","Qualifica":"Business Consulent Assoc","Telefono":"+39 378 8070","Stato":"Occupato"},
+      {"EntrepriseId": "5ko","Nome":"John","Cognome":"Marks","Qualifica":"Trader Assoc","Telefono":"+39 389 8904","Stato":"Online"},
+      {"EntrepriseId": "6kp","Nome":"Emilio","Cognome":"Giordani","Qualifica":"Regular DropShipper","Telefono":"+39 390 8850","Stato":"Al Telefono"}
+     ]
+     

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<div>
+    <h1 class="h1 text-center">Il nostro team</h1>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">EntrepriseId</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Cognome</th>
+            <th scope="col">Qualifica</th>
+            <th scope="col">Numero telefono</th>
+            <th scope="col">Detail</th>
+        </tr>
+    </thead>
+    <tbody class="">
+        <tr *ngFor="let impiegato of impiegati">
+            <td scope="row">{{impiegato.EntrepriseId}}</td>
+            <td scope="row">{{impiegato.Nome}}</td>
+            <td scope="row">{{impiegato.Cognome}}</td>
+            <td scope="row">{{impiegato.Qualifica}}</td>
+            <td scope="row">{{impiegato.Telefono}}
+            <a href="#x"><i class="bi bi-telephone-plus-fill"></i></a>
+            </td>
+           <td><a href="team/Detail"><i class="bi bi-file-text"></i></a>
+           </td>
+        </tr>
+    </tbody>
+</table>
+<h3>{{errorMsg}}</h3>
+<router-outlet></router-outlet>

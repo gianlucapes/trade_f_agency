@@ -1,0 +1,16 @@
+<div>
+    <h1 class="h1 text-center">I Nostri dipartimenti più importanti</h1>
+</div>
+
+  <div class="list-group"  *ngFor="let dipartimento of dipartimenti">
+    <a (click)="onSelect(dipartimento)" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{dipartimento.Nome}}</h5>
+        <small>Geo Code : {{dipartimento.GeoCode}}</small>
+      </div>
+      <p class="mb-1">{{dipartimento.Descrizione}}</p>
+      <p>Sede Legale : {{dipartimento.Sede}}</p>
+       Manager di riferimento  
+       <small>{{dipartimento.Leader}}</small>
+    </a>
+  </div>
