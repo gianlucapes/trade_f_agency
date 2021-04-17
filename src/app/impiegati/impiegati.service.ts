@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {IImpiegato} from  './impiegati';
+import {IImpiegato} from  '../impiegati';
 import { throwError as observableThrowError, Observable, observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 @Injectable({
@@ -9,15 +9,11 @@ import { catchError } from 'rxjs/operators';
 
 export class ImpiegatiService {
 
-  private _url: string ="../assets/Data/impiegati.json";
+  private _url: string ="https://localhost:44355/api/Impiegiati/GetAllImpiegati";
   constructor(private http:HttpClient) { }
-
-  getImpiegati() : Observable <IImpiegato[]> {
-    return this.http.get<IImpiegato[]>(this._url).pipe(
-      catchError(this.errorHandle));
+  public getImpiegati() : Observable <IImpiegato []> { 
+   return this.http.get<IImpiegato []>(this._url);
   }
 
-  errorHandle(error:HttpErrorResponse){
-     return observableThrowError(error.message || "Internal server error");
- }
+  
 }

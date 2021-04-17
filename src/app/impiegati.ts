@@ -1,8 +1,8 @@
 export interface IImpiegato {
-    EntrepriseId:string,
-    Nome:string,
-    Cognome:string,
-    Qualifica:string,
-    Telefono:string,
-    Stato:string
+    entrepriseId:Int32Array,
+    nome:string,
+    cognome:string,
+    qualifica:string,
+    telefono:string,
+    stato:string
 }
