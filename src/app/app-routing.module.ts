@@ -6,9 +6,11 @@ import {HomeComponent} from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DipartimentiDetailComponent } from './dipartimenti-detail/dipartimenti-detail.component';
 import {ImpiegatiDetailComponent} from './impiegati-detail/impiegati-detail.component';
+import { AddImpiegatoComponent } from './add-impiegato/add-impiegato.component';
 
 const routes: Routes = [
   { path :'' , redirectTo: '/home',pathMatch:'full'},
+  { path :'team/add',component:AddImpiegatoComponent},
   { path:'team', component:ImpiegatiComponent},
   { path :'team/Detail',component:ImpiegatiDetailComponent},
   { path:'dipartimenti', component:DipartimentiComponent},

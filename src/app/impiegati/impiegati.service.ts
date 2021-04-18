@@ -9,11 +9,17 @@ import { catchError } from 'rxjs/operators';
 
 export class ImpiegatiService {
 
-  private _url: string ="https://localhost:44355/api/Impiegiati/GetAllImpiegati";
+  private getImpiegatiUrl: string ="https://localhost:44355/api/Impiegiati/GetAllImpiegati";
+  private AddImpiegatoUrl : string = "https://localhost:44355/api/Impiegiati/AddImpiegato"
   constructor(private http:HttpClient) { }
-  public getImpiegati() : Observable <IImpiegato []> { 
-   return this.http.get<IImpiegato []>(this._url);
+
+  public getImpiegati() : Observable <any> { 
+   return this.http.get(this.getImpiegatiUrl);
   }
+
+  public addImpiegato(impiegato : any) : Observable <any> { 
+    return this.http.post(this.AddImpiegatoUrl,impiegato);
+   }
 
   
 }
